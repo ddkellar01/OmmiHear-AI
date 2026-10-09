@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "high_risk_keywords": [
+    "zelle",
+    "wire transfer",
+    "gift card",
+    "target gift card",
+    "social security number",
+    "medicare number",
+    "urgent action required",
+    "warrant for your arrest",
+    "grandson in jail"
+  ],
+  "threat_score_threshold": 2,
+  "offline_warning_message": "OFFLINE ALERT: The caller is using language commonly associated with financial scams. Please hang up."
+}
