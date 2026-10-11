@@ -18,14 +18,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          # Install the project in editable mode so local modules are discoverable
-          pip install -e .
+          pip install pytest
 
       - name: Run Tests
         env:
