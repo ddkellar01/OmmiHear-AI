@@ -46,3 +46,4 @@ jobs:
           file: Dockerfile.backend
           push: true
           tags: ${{ env.IMAGE_NAME }}:latest
+
