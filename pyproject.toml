@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omnihear-ai"
+version = "0.1.0"
+description = "OmniHear-AI Backend Engine and Scam Defense"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "pydantic",
+    "httpx",
+    "pytest"
+]
+
+[tool.setuptools]
+packages = ["gemini_logic_engine", "hardware", "mobile_companion_app", "scripts", "tests"]
