@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from scam_defense import detect_scam
-from environment_tuner import get_dsp_params
-from interspecies_bridge import map_command_to_haptic
+from .scam_defense import detect_scam
+from .environment_tuner import get_dsp_params
+from .interspecies_bridge import map_command_to_haptic
 
 app = FastAPI(title="OmniHear-AI Backend Engine")
 
