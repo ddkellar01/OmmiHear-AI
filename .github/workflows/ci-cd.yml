@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkoutv3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -29,6 +29,7 @@ jobs:
       - name: Run Tests
         run: |
           pip install pytest fastapi httpx
+          pip install -e .
           pytest tests/
 
       - name: Log in to the Container registry
@@ -44,4 +45,4 @@ jobs:
           context: .
           file: Dockerfile.backend
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ env.IMAGE_NAME }}:latest
